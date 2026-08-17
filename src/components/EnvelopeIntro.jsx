@@ -166,7 +166,7 @@ const EnvelopeIntro = ({ onOpen }) => {
     setDoneCount((c) => c + 1);
   };
 
-  const petals = useMemo(() => Array.from({ length: 18 }).map((_, i) => ({
+  const petals = useMemo(() => Array.from({ length: 10 }).map((_, i) => ({
     id: `petal-${i}`,
     left: `${Math.random() * 100}%`,
     size: `${Math.random() * 14 + 10}px`,
@@ -176,7 +176,7 @@ const EnvelopeIntro = ({ onOpen }) => {
     emoji: ['🌸', '🌺', '✿', '❀', '🌷', '💮'][Math.floor(Math.random() * 6)],
   })), []);
 
-  const stars = useMemo(() => Array.from({ length: 25 }).map((_, i) => ({
+  const stars = useMemo(() => Array.from({ length: 12 }).map((_, i) => ({
     id: `star-${i}`,
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
@@ -186,14 +186,14 @@ const EnvelopeIntro = ({ onOpen }) => {
     color: ['#FF6B8B', '#C77DFF', '#48CAE4', '#F9C74F', '#80ED99'][Math.floor(Math.random() * 5)],
   })), []);
 
-  const particles = Array.from({ length: 20 }).map((_, i) => ({
+  const particles = useMemo(() => Array.from({ length: 10 }).map((_, i) => ({
     id: `p-${i}`,
     x: (Math.random() - 0.5) * 100 + 'vw',
     y: (Math.random() - 0.5) * 100 + 'vh',
     scale: Math.random() * 0.5 + 0.5,
     delay: Math.random() * 2,
     duration: Math.random() * 3 + 2,
-  }));
+  })), []);
 
   const hearts = Array.from({ length: 15 }).map((_, i) => ({
     id: i,

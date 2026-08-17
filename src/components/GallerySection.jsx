@@ -72,10 +72,10 @@ const GallerySection = ({ onNext }) => {
   const photos = [
     { id: 1, rot: -5, url: '/jajal.jpeg', caption: 'first time kesaloka' },
     { id: 2, rot: 4, url: '/foto.jpeg', caption: 'first time muncak' },
-    { id: 3, rot: -7, url: '/family.jpeg', caption: 'Liburan Bareng my family' },
-    { id: 4, rot: 5, url: '/mcd.jpeg', caption: 'nyobain eskrim mcd nih' },
+    { id: 3, rot: -7, url: '/family.jpg', caption: 'Liburan Bareng my family' },
+    { id: 4, rot: 5, url: '/mcd.jpg', caption: 'nyobain eskrim mcd nih' },
     { id: 5, rot: -4, url: '/jogja.jpeg', caption: 'lucuuu kann' },
-    { id: 6, rot: 6, url: '/lucu.jpeg', caption: 'with bocilll' },
+    { id: 6, rot: 6, url: '/lucu.jpg', caption: 'with bocilll' },
     { id: 7, rot: -6, url: '/telomoyo.jpeg', caption: 'telomoyo date wkwk' },
     { id: 8, rot: 3, url: '/genting .jpeg', caption: 'sedingin itu' },
   ];
@@ -88,7 +88,7 @@ const GallerySection = ({ onNext }) => {
 
   // Generate random dust particles once
   const [dustParticles] = useState(() =>
-    Array.from({ length: 30 }).map((_, i) => ({
+    Array.from({ length: 15 }).map((_, i) => ({
       id: i,
       left: Math.random() * 100,
       top: Math.random() * 100,
