@@ -61,7 +61,7 @@ const LetterSection = ({ onNext }) => {
           >
             <div className="w-64 h-80 bg-gray-200 overflow-hidden">
               <img
-                src="public/favorite.jpeg"
+                src="/favorite.jpeg"
                 alt="Our Memory"
                 className="w-full h-full object-cover"
               />
